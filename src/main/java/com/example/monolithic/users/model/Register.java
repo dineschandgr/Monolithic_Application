@@ -1,4 +1,4 @@
-package com.example.Spring_security_test.model;
+package com.example.monolithic.users.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

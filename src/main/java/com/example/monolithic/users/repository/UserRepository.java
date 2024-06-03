@@ -1,6 +1,6 @@
-package com.example.Spring_security_test.repository;
+package com.example.monolithic.users.repository;
 
-import com.example.Spring_security_test.model.Users;
+import com.example.monolithic.users.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.example.Spring_security_test.controller;
+package com.example.monolithic.users.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +21,7 @@ public class TestController {
         return "devloper api works";
     }
 
-    @GetMapping("Admin")
+    @GetMapping("admin")
     public String adminTest(){
         return "admin api works";
     }

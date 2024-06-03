@@ -1,13 +1,13 @@
-package com.example.Spring_security_test;
+package com.example.monolithic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringSecurityTestApplication {
+public class MonolithicApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringSecurityTestApplication.class, args);
+		SpringApplication.run(MonolithicApplication.class, args);
 	}
 
 }

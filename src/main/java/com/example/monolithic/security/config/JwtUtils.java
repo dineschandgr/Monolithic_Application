@@ -1,6 +1,6 @@
-package com.example.Spring_security_test.config;
+package com.example.monolithic.security.config;
 
-import com.example.Spring_security_test.model.Users;
+import com.example.monolithic.model.Users;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -59,9 +59,13 @@ public class JwtUtils {
                 .compact();
     }
 
-    public boolean isTokenValid(String token, UserDetails userDetails) {
+    public boolean isTokenValid(String token, UserDetails userDetails) throws Exception {
         final String username = extractEmail(token);
-        return (username.equals(userDetails.getUsername())) && !    isTokenExpired(token);
+        boolean isTokenExpired = isTokenExpired(token);
+        if(isTokenExpired){
+            throw new Exception("Token is Expired");
+        }
+        return (username.equals(userDetails.getUsername())) && !isTokenExpired;
     }
 
     private boolean isTokenExpired(String token) {

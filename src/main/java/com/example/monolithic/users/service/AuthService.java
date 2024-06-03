@@ -1,11 +1,11 @@
-package com.example.Spring_security_test.service;
+package com.example.monolithic.users.service;
 
-import com.example.Spring_security_test.config.JwtUtils;
-import com.example.Spring_security_test.model.ERole;
-import com.example.Spring_security_test.model.Login;
-import com.example.Spring_security_test.model.Register;
-import com.example.Spring_security_test.model.Users;
-import com.example.Spring_security_test.repository.UserRepository;
+import com.example.monolithic.model.ERole;
+import com.example.monolithic.model.Login;
+import com.example.monolithic.model.Register;
+import com.example.monolithic.model.Users;
+import com.example.monolithic.repository.UserRepository;
+import com.example.monolithic.security.config.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -60,7 +60,7 @@ public class AuthService {
         Optional<Users> user = userRepository.findById(id);
         if (user.isPresent()) {
             if (role.equals("DEVELOPER")) {
-                user.get().setRole(ERole.DEVLOPER);
+                user.get().setRole(ERole.DEVELOPER);
             } else if (role.equals("ADMIN")) {
                 user.get().setRole(ERole.ADMIN);
             } else {

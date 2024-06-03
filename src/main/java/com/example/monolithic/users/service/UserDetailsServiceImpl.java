@@ -1,6 +1,6 @@
-package com.example.Spring_security_test.service;
+package com.example.monolithic.users.service;
 
-import com.example.Spring_security_test.repository.UserRepository;
+import com.example.monolithic.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

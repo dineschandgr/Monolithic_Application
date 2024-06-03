@@ -1,6 +1,6 @@
-package com.example.Spring_security_test.config;
+package com.example.monolithic.security.config;
 
-import com.example.Spring_security_test.repository.UserRepository;
+import com.example.monolithic.users.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.example.Spring_security_test.config;
+package com.example.monolithic.security.config;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
