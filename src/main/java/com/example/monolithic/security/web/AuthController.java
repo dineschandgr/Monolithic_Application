@@ -1,9 +1,13 @@
-package com.example.monolithic.users.controller;
+package com.example.monolithic.security.web;
 
 import com.example.monolithic.model.Login;
 import com.example.monolithic.model.Register;
 import com.example.monolithic.model.Users;
 import com.example.monolithic.service.AuthService;
+import com.example.monolithic.users.model.Login;
+import com.example.monolithic.users.model.Register;
+import com.example.monolithic.users.model.Users;
+import com.example.monolithic.users.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

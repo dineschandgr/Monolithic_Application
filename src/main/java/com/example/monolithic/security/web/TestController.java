@@ -1,4 +1,4 @@
-package com.example.monolithic.users.controller;
+package com.example.monolithic.security.web;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
